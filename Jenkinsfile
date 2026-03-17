@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Tony-VBB/ci-cd-app.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
