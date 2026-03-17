@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "<your-dockerhub-username>/<register>_<roll>"
+        DOCKER_IMAGE = "vbalajibhargav2023bcs0162/2023BCS0162_2023BCS0162:latest"
     }
 
     stages {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/<your-username>/ci-cd-app.git'
+                git 'https://github.com/Tony-VBB/ci-cd-app.git'
             }
         }
 
